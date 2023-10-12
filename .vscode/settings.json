@@ -1,3 +1,7 @@
 {
-  "prettier.configPath": "prettier.config.js"
+  "prettier.configPath": "prettier.config.js",
+  "editor.rulers": [0, 100],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }

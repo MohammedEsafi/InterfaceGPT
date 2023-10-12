@@ -1,69 +1,84 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+      fontFamily: {
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      colors: {
+        base: {
+          background: "hsl(var(--color-base-background))",
+          foreground: "hsl(var(--color-base-foreground))",
+        },
+        neutral: {
+          surface: "hsl(var(--color-neutral-surface))",
+          "on-surface": "hsl(var(--color-neutral-on-surface))",
+          "surface-secondary": "hsl(var(--color-neutral-surface-secondary))",
+          "on-surface-secondary": "hsl(var(--color-neutral-on-surface-secondary))",
+        },
+        brand: {
+          surface: "hsl(var(--color-brand-surface))",
+          "on-surface": "hsl(var(--color-brand-on-surface))",
+          fill: "hsl(var(--color-brand-fill))",
+          "on-fill": "hsl(var(--color-brand-on-fill))",
+        },
+        info: {
+          surface: "hsl(var(--color-info-surface))",
+          "on-surface": "hsl(var(--color-info-on-surface))",
+          fill: "hsl(var(--color-info-fill))",
+          "on-fill": "hsl(var(--color-info-on-fill))",
+        },
+        success: {
+          surface: "hsl(var(--color-success-surface))",
+          "on-surface": "hsl(var(--color-success-on-surface))",
+          fill: "hsl(var(--color-success-fill))",
+          "on-fill": "hsl(var(--color-success-on-fill))",
+        },
+        caution: {
+          surface: "hsl(var(--color-caution-surface))",
+          "on-surface": "hsl(var(--color-caution-on-surface))",
+          fill: "hsl(var(--color-caution-fill))",
+          "on-fill": "hsl(var(--color-caution-on-fill))",
+        },
+        warning: {
+          surface: "hsl(var(--color-warning-surface))",
+          "on-surface": "hsl(var(--color-warning-on-surface))",
+          fill: "hsl(var(--color-warning-fill))",
+          "on-fill": "hsl(var(--color-warning-on-fill))",
+        },
+        critical: {
+          surface: "hsl(var(--color-critical-surface))",
+          "on-surface": "hsl(var(--color-critical-on-surface))",
+          fill: "hsl(var(--color-critical-fill))",
+          "on-fill": "hsl(var(--color-critical-on-fill))",
+        },
+        inverse: {
+          surface: "hsl(var(--color-inverse-surface))",
+          "on-surface": "hsl(var(--color-inverse-on-surface))",
+          fill: "hsl(var(--color-inverse-fill))",
+          "on-fill": "hsl(var(--color-inverse-on-fill))",
+        },
+        hairline: {
+          surface: "hsl(var(--color-input-surface))",
+          border: "hsl(var(--color-input-border))",
+        },
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
