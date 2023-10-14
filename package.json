@@ -1,7 +1,11 @@
 {
-  "name": "my-app",
+  "name": "gpt",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Mohammed Esafi",
+    "url": "https://twitter.com/MohammedEsafi"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
