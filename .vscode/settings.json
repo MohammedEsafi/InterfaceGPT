@@ -3,5 +3,10 @@
   "editor.rulers": [0, 100],
   "files.associations": {
     "*.css": "tailwindcss"
-  }
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva(([^)]+))", "'([^']*)'"],
+    ["cva(([^)]+))", "\"([^\"]*)\""],
+    ["cva(([^)]+))", "\\`([^\\`]*)\\`"]
+  ]
 }
