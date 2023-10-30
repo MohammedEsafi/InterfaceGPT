@@ -422,6 +422,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/font@npm:^13.5.6":
+  version: 13.5.6
+  resolution: "@next/font@npm:13.5.6"
+  checksum: feb95f979ffeaaa02ba523f7c5747f3cd3d7280234384df8819785e40fcf8fe2e0f2d51d07e98e1b0b97b2bc4d462732ad0175ca83ca9b71da772e5f39726b27
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-arm64@npm:14.0.0":
   version: 14.0.0
   resolution: "@next/swc-darwin-arm64@npm:14.0.0"
@@ -2040,6 +2047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"geist@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "geist@npm:1.0.0"
+  dependencies:
+    "@next/font": "npm:^13.5.6"
+  checksum: 46867ac2e58413c52687e4ee666068a99955ef96edcf829ff2108bc338363740fd8b08ec42c14de076a0d15cbc0f00c130aece21c2d43dd203d27b7ad633569c
+  languageName: node
+  linkType: hard
+
 "gensync@npm:^1.0.0-beta.2":
   version: 1.0.0-beta.2
   resolution: "gensync@npm:1.0.0-beta.2"
@@ -2225,6 +2241,7 @@ __metadata:
     eslint-config-next: "npm:14.0.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-tailwindcss: "npm:^3.13.0"
+    geist: "npm:^1.0.0"
     next: "npm:14.0.0"
     postcss: "npm:^8.4.31"
     prettier: "npm:^3.0.3"
