@@ -54,3 +54,10 @@
     @apply bg-background font-sans text-foreground;
   }
 }
+
+@layer utilities {
+  .min-h-dvh {
+    height: 100vh;
+    height: 100dvh;
+  }
+}
